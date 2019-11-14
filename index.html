@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Weather Data</title>
+    <link rel="stylesheet" href="./css/styles.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -11,12 +12,11 @@
   </head>
   <body>
     <nav class="navbar navbar-dark bg-primary">
-      <!-- Navbar content -->
       <a class="navbar-brand" href="#">
+        <img src="./images/cloud-sun-solid.svg" class='brand-image' />
         WeatherPy
       </a>
     </nav>
-
     <div class="jumbotron">
       <h1 class="display-4">WeatherPy</h1>
       <p class="lead">Analyzing data on 500+ cities.</p>
@@ -26,6 +26,49 @@
       Finally graphed the weather data with matplotlib</p>
       <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
     </div>
-
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+          <img src="./images/lat-cloudiness.png" class="card-img-top" alt="latitude vs cloudiness">
+          <div class="card-body">
+            <h5 class="card-title">Latitude vs Cloudiness</h5>
+            <p class="card-text">Shows how cloudiness relates to latitude</p>
+            <a href="cloudiness.html" class="btn btn-primary">Show More</a>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+          <img src="./images/lat-humid.png" class="card-img-top" alt="latitude vs humidity">
+          <div class="card-body">
+            <h5 class="card-title">Latitude vs Humidity</h5>
+            <p class="card-text">Shows how humidity relates to latitude.</p>
+            <a href="#" class="btn btn-primary">Show More</a>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+          <img src="./images/lat-max-temp.png" class="card-img-top" alt="latitude vs max temperature">
+          <div class="card-body">
+            <h5 class="card-title">Latitude vs Max Temperature</h5>
+            <p class="card-text">Shows how max temperature relates to latitude.</p>
+            <a href="#" class="btn btn-primary">Show More</a>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+          <img src="./images/lat-wind-speed.png" class="card-img-top" alt="latitude vs wind speed">
+          <div class="card-body">
+            <h5 class="card-title">Latitude vs Wind Speed</h5>
+            <p class="card-text">Shows how wind speed relates to latitude.</p>
+            <a href="#" class="btn btn-primary">Show More</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
